@@ -14,9 +14,6 @@ public class XmlToJsonService {
 
     /**
      * Processes the XML input and returns the converted JSON
-     *
-     * @param xmlInput XML string to be converted
-     * @return Converted JSON string with TotalMatchScore
      */
     public String processXml(String xmlInput) {
         logger.info("Processing XML input");
@@ -27,6 +24,4 @@ public class XmlToJsonService {
             throw new RuntimeException("Failed to process XML: " + e.getMessage(), e);
         }
     }
-
-
 }
